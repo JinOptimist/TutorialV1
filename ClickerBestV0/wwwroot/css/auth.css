@@ -1,0 +1,88 @@
+.auth-main-block {
+    display: flex;
+}
+
+.auth-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-bg {
+    flex: 1;
+    max-width: 50%;
+    min-height: 50vh;
+    background-image: url(../images/Bg-Auth.png);
+    border-radius: 20px;
+    background-size: cover;
+}
+
+form{
+    width: 360px;
+}
+
+.title {
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+}
+.additional-info {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 70px;
+}
+
+input {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.60);
+    background: rgba(255, 255, 255, 0.10);
+    color: #fff;
+    width: 360px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.field-validation-error {
+    background: rgba(255, 112, 156, 0.20);
+    display: block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22.001px;
+    color: #FF709C;
+}
+
+.field-name {
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.auth-main-block .button {
+    background-color: #2BA386;
+    width: 100%;
+    height: 41px;
+    margin-top: 20px;
+}
+
+.login-register-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+    .login-register-link a {
+        color: #77D1BC;
+        margin-left: 5px;
+    }

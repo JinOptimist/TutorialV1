@@ -1,0 +1,51 @@
+﻿@model IndexViewModel
+
+<div class="user-info">
+    <div class="name">
+        Hello, @Model.Name!
+    </div>
+    <div class="attribute-block">
+        <div class="attribute">
+            <div class="attribute-name">Level</div>
+            <div>Junior</div>
+        </div>
+        <div class="attribute">
+            <div class="attribute-name">Experience</div>
+            <div><img src="~/images/Exp.png" />@Model.Exp</div>
+        </div>
+        <div class="attribute">
+            <div class="attribute-name">Coins</div>
+            <div><img src="~/images/Coin.png" />@Model.Coins</div>
+        </div>
+    </div>
+</div>
+<div class="options">
+    <div class="level">
+        <div class="level-name-block">
+            <span class="level-name">
+                Junior
+            </span>
+        </div>
+        <div class="level-legend">
+            <div class="level-image-block">
+                <img src='/images/L0.png' />
+            </div>
+            <div class="level-legend-text">
+                <div>Learn: <span class="sign">+</span><img src="/images/Exp.png" />+1</div>
+                <div>Work: <span class="sign">+</span><img src="/images/Coin.png" />+2</div>
+            </div>
+        </div>
+        <div class="action-block">
+            <a class="button learn" href="/home/learn">
+                Learn
+            </a>
+            <a class="button work" href="/home/job">
+                Job
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/index.css" />
+}

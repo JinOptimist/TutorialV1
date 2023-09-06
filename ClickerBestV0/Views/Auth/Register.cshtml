@@ -1,0 +1,49 @@
+﻿@model AuthUserViewModel
+
+<div class="auth-main-block">
+    <div class="auth-info">
+        <div>
+            <div class="title">
+                Sign up to platform
+            </div>
+
+            <form method="post">
+                <div class="field-name">
+                    Email
+                </div>
+                <div class="field">
+                    @Html.TextBoxFor(x => x.Email, new {
+                    placeholder = "Please enter your email"
+                    })
+                </div>
+                <div>
+                    @Html.ValidationMessageFor(x => x.Email)
+                </div>
+                <div class="field-name">
+                    Password
+                </div>
+                <div>
+                    @Html.TextBoxFor(x => x.Password, new {
+                    @type = "password",
+                    placeholder = "Please enter your password"
+                    })
+                </div>
+                <div>
+                    @Html.ValidationMessageFor(x => x.Password)
+                </div>
+                <div>
+                    <input type="submit" class="button" value="Create account" />
+                </div>
+            </form>
+            <div class="login-register-link">
+                Already a member?
+                <a href="/Account/Login">Sign in</a>
+            </div>
+        </div>
+    </div>
+    <div class="auth-bg"></div>
+</div>
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/auth.css" />
+}

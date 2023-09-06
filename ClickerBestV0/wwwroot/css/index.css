@@ -1,0 +1,96 @@
+.user-info {
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 48px;
+    margin-bottom: 40px;
+}
+
+    .user-info .name {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+
+.attribute-block {
+    display: flex;
+}
+
+.attribute {
+    margin-right: 40px;
+}
+
+    .attribute .attribute-name {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        line-height: 120%;
+        color: rgb(255, 255, 255, .6);
+        margin-block: 8px;
+    }
+
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.level {
+    width: 263px;
+    height: 219px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 32px;
+}
+
+    .level .level-name-block {
+        margin-bottom: 30px;
+    }
+
+        .level .level-name-block .level-name {
+            background: rgba(255, 255, 255, 0.10);
+            border-radius: 16px;
+            padding: 8px 16px;
+        }
+
+    .level .level-legend {
+        display: flex;
+        margin-bottom: 35px;
+    }
+
+        .level .level-legend .level-legend-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 16px;
+        }
+
+            .level .level-legend .level-legend-text .sign {
+                color: rgba(255, 255, 255, 0.60);
+            }
+
+            .level .level-legend .level-legend-text img {
+                max-height: 12px;
+            }
+
+    .level .action-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .level .action-block .button {
+            padding: 8px 32px;
+            line-height: 150%;
+            letter-spacing: 0.32px;
+            width: 64px;
+            text-align: center;
+        }
+
+.button.learn {
+    background-color: #A577E4;
+}
+
+.button.work {
+    background-color: #2BA386;
+}

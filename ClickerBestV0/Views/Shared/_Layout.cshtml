@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClickerWeb</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="~/css/reset.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <div class="content-width">
+        <header>
+            <div class="link-block">
+                <a class="button logo" href="/Home/Index">.NET</a>
+                <a class="button" href="/Home/Index">Home</a>
+            </div>
+            <div class="link-block auth-block">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="button auth" href="/Auth/Logout">Log out</a>
+                }
+                else
+                {
+                    <a class="button auth" href="/Auth/Register">Register</a>
+                    <a class="button auth" href="/Auth/Login">Log in</a>
+                }
+            </div>
+        </header>
+        <div class="content">
+            @RenderBody()
+        </div>
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
